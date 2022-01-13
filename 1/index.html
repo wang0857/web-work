@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="zxx">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS -->
+    <link rel="stylesheet" href="./css/main.css">
+    <!-- Font Family -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/561d44a731.js" crossorigin="anonymous"></script>
+    <!-- jquery -->
+    <script src="./js/jquery-3.6.0.js"></script>
+    <script src="./js/main.js"></script>
+    <title>Basice Website Design I</title>
+</head>
+<body>
+
+    <!-- ========================Navigation======================== -->
+    
+    <header>
+        <div class="nav-container">
+            <div class="logo">
+                <a href="#">LOGO</a>   <!-- It will be replaced by logo image. -->
+            </div>
+            <nav>
+                <ul class="topnav">
+                    <li>
+                        <a href="javascript:void(0);" class="nav-menu-bars">
+                            <i class="fas fa-bars"></i>
+                        </a>
+                    </li>
+                    <li class="navlist">
+                        <a href="#" class="nav-items">Home</a>
+                    </li>
+                    <li class="navlist">
+                        <a href="#product-section" class="nav-items">Product</a>
+                    </li>
+                    <li class="navlist">
+                        <a href="#contact-section" class="nav-items border-none">Contact</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+
+        <!-- ========================Main Banner======================== -->
+
+        <section class="main-banner-section">
+            <div class="main-banner-container">
+                <ul class="main-banner-images" id="mainBanners">
+                    <li><img src="images/main-banner-1.jpg" alt="main-banner-1"></li>
+                </ul>
+
+                <div class="main-wording">
+                    <h1>Lorem</h1>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                    <button class="contact-bt">Button</button>
+                </div>
+
+                <div class="scroll-down">
+                    <i class="fas fa-angle-double-down"></i>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========================Product Section======================== -->
+
+        <!-- hidden anchor -->
+        <a class="product-anchor" id="product-section"></a>
+
+        <section class="container product-section">
+            <h2>Product</h2>
+
+            <div class="prouct-card-container">
+                <div class="product-card">
+                    <div class="image-crop">
+                        <img src="images/product-1.jpg" alt="product-1">
+                    </div>
+                    <h3>Lorem</h3>
+                    <p>
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iure deleniti reprehenderit quasi, eum, temporibus ipsum necessitatibus iste esse explicabo facere illo! Qui veniam nulla hic blanditiis suscipit excepturi eligendi reprehenderit?
+                    </p>
+                </div>
+
+                <div class="product-card">
+                    <div class="image-crop">
+                        <img src="images/product-2.jpg" alt="product-2">
+                    </div>
+                    <h3>Lorem</h3>
+                    <p>
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iure deleniti reprehenderit quasi, eum, temporibus ipsum necessitatibus iste esse explicabo facere illo! Qui veniam nulla hic blanditiis suscipit excepturi eligendi reprehenderit?
+                    </p>
+                </div>
+
+                <div class="product-card">
+                    <div class="image-crop">
+                        <img src="images/product-3.jpg" alt="product-3">
+                    </div>
+                    <h3>Lorem</h3>
+                    <p>
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iure deleniti reprehenderit quasi, eum, temporibus ipsum necessitatibus iste esse explicabo facere illo! Qui veniam nulla hic blanditiis suscipit excepturi eligendi reprehenderit?
+                    </p>
+                </div>
+
+                <div class="product-card">
+                    <div class="image-crop">
+                        <img src="images/product-4.jpg" alt="product-4">
+                    </div>
+                    <h3>Lorem</h3>
+                    <p>
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iure deleniti reprehenderit quasi, eum, temporibus ipsum necessitatibus iste esse explicabo facere illo! Qui veniam nulla hic blanditiis suscipit excepturi eligendi reprehenderit?
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========================Introduction Section======================== -->
+
+        <section class="intro-section">
+            <!-- Here will use background image and set as fixed. -->
+            <div class="intro-container">
+                <h2>Lorem</h2>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum perferendis soluta vero molestiae facere, quae nulla aliquid. Nihil sit dolores voluptate natus eos maiores voluptas accusantium. Facere culpa tempora dolorem!
+                </p>
+            </div>
+        </section>
+
+        <!-- ========================Contact Section======================== -->
+
+        <!-- hidden anchor -->
+        <a class="contact-anchor" id="contact-section"></a>
+
+        <section class="container contact-section">
+            <h2>Contact Us</h2>
+            <form class="contact-form" autocomplete="on">
+                <label for="name">Name</label>
+                <input type="text" class="input-row" id="name" name="name">
+                <label for="email">Email</label>
+                <input type="text" class="input-row" id="email" name="email">
+                <label for="message">Message</label>
+                <textarea class="textarea-area" id="message" name="message" cols="30" rows="10"></textarea>
+                <input type="submit" class="submit-bt" value="SEND">
+            </form>
+        </section>
+    </main>
+
+    <!-- ========================Footer======================== -->
+
+    <footer class="container">
+        <div class="footer-container">
+            <p>&copy; Copyright Ruo-Fang Wang, 2021.</p>
+            <p>All images are taken from
+                <a href="https://pixabay.com/">Pixapay</a>
+            </p>
+        </div>
+    </footer>
+</body>
+</html>
