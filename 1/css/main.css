@@ -56,12 +56,12 @@ table {
 
 /* =================Mobile Layout Start================= */
 
-@media screen and (min-width: 360px) {
+@media screen and (min-width: 350px) {
     
     /* -----------------Container Setting----------------- */
 
     .container {
-        max-width: 360px;
+        max-width: 350px;
         margin: 0px auto;
     }
     
