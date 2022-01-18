@@ -54,49 +54,182 @@ table {
 
 
 
-/* =================Mobilbe-First Layout Start================= */
+/* =================Mobile Layout Start================= */
 
-@media screen and (max-width: 760px) {
-    .container, .intro-container {
-        padding: 0px 15px;
+@media screen and (min-width: 378px) {
+    
+    /* -----------------Container Setting----------------- */
+
+    .container {
+        max-width: 378px;
         margin: 0px auto;
     }
+    
+    .intro-container, .contact-section, .footer-container, .card-paragraph-container {
+        max-width: 300px;
+        padding: 0px 10px;
+        margin: 0px auto;
+    }
+
+    .contact-section {
+        padding-right: 30px;
+    }
+
+
+
+    /* -----------------Font Setting----------------- */
+
+    h1 {
+        font-size: 3rem;
+        font-weight: 800;
+        text-shadow: 0px 3px 6px black;
+        color: white;
+        margin: 1.5rem 0rem;
+    }
+    
+    h2 {
+        font-size: 2.3rem;
+        font-weight: 700;
+        margin: 1rem 0rem;
+    }
+    
+    h3 {
+        font-size: 1.5rem;
+        font-weight: 700;
+        margin: 1rem 0rem;
+    }
+
+
+
+    /* -----------------Navigation----------------- */
+
+    .nav-container {
+        max-height: 3.2rem;
+    }
+    
+    .logo {
+        width: 132px;
+        margin: 0px;
+        padding: 0px;
+        transform: translateX(-25px) translateY(-15px);
+    }
+
+    nav {
+        transform: translateY(-31px);
+    }
+    
+    /* nav bar icon */ 
+    .nav-menu-bars {
+        transform: translateX(-30px) translateY(15px);
+    }
+
+    .navlist {
+        transform: translateY(10px);
+    }
+    
+    /* home/product/contact */
+    .navlist a {
+        transform: translateX(-40px);
+    }
+
+
+
+    /* -----------------Main Banner----------------- */
+    .main-banner-section {
+        padding-top: 0px;
+    }
+
+    .main-banner-container {
+        transform: translateY(-32px);
+    }
+
+    /* main banner wording and button */
+    .main-wording {
+        transform: translateY(22px);
+        max-width: 300px;
+    }
+
+    .contact-bt {
+        font-size: 1rem;
+        padding: 8px 15px;
+    }
+
+    .scroll-down {
+        transform: scale(1,1) translateY(10px);
+    }
+
+
+
 }
+
+/* =================Mobile Layout End================= */
+
+
+
+/* =================Tablet Layout Start================= */
+
 
 @media screen and (min-width: 760px) {
-    .container, .intro-container {
-        width: 706px;
+
+    /* -----------------Container Setting----------------- */
+
+    .container {
+        max-width: 706px;
         padding: 0px 15px;
         margin: 0px auto;
+    }
+
+    .intro-container, .contact-section, .footer-container, .card-paragraph-container {
+        max-width: 600px;
+        padding: 0px 10px;
+        margin: 0px auto;
+    }
+
+
+
+    /* -----------------Font Setting----------------- */
+    h1 {
+        font-size: 5rem;
+        font-weight: 800;
+        text-shadow: 0px 3px 6px black;
+        color: white;
+        margin: 2rem 0rem;
+    }
+    
+    h2 {
+        font-size: 3.8rem;
+        font-weight: 700;
+        margin: 1.5rem 0rem;
+    }
+    
+    h3 {
+        font-size: 3rem;
+        font-weight: 700;
+        margin: 1.3rem 0rem;
+    }
+
+
+
+    /* -----------------Main Banner----------------- */
+
+    /* main banner contact btn */
+    .contact-bt {
+        font-size: 1.5rem;
+        padding: 15px 35px;
+    }
+
+    /* scroll down icon */
+    .scroll-down {
+        transform: scale(2,2);
     }
 }
 
 
 
-/* -----------------Font and Image Width Setting----------------- */
+/* -----------------Overall Font and Image Setting----------------- */
 
 body {
     font-family: 'Maven Pro', sans-serif;
-}
-
-h1 {
-    font-size: 5rem;
-    font-weight: 800;
-    text-shadow: 0px 3px 6px black;
-    color: white;
-    margin: 2rem 0rem;
-}
-
-h2 {
-    font-size: 3.8rem;
-    font-weight: 700;
-    margin: 1.5rem 0rem;
-}
-
-h3 {
-    font-size: 3rem;
-    font-weight: 700;
-    margin: 1.3rem 0rem;
 }
 
 p {
@@ -111,14 +244,9 @@ img {
 
 /* -----------------Navigation Anchor----------------- */
 
-.product-anchor {
+.product-anchor, .contact-anchor{
     position: relative;
-    top: -84px;
-}
-
-.contact-anchor {
-    position: relative;
-    top: -82px;
+    top: -50px;
 }
 
 
@@ -166,7 +294,6 @@ nav {
 }
 
 /* nav bar icon */
-
 .nav-menu-bars {
     border: none;
     background: none;
@@ -178,7 +305,6 @@ nav {
 }
 
 /* home/product/contact */
-
 .nav-items {
     width: 90%;
     transform: translateY(11px);
@@ -235,7 +361,7 @@ nav {
     color: white;
     padding: 8px 12px;
     position: absolute;
-    bottom: 25%;
+    bottom: 27%;
     left: 10%;
     width: 355px;
 }
@@ -245,8 +371,6 @@ nav {
     color: white;
     background-color: #3E4E50;
     border-radius: 50px;
-    font-size: 1.5rem;
-    padding: 15px 35px;
     box-shadow: 0px 2px 5px #3C1518;
     transition: box-shadow .5s ease;
 }
@@ -266,7 +390,6 @@ nav {
     left: 50%;
     display: block;
     color: #F5AC72;
-    transform: scale(2,2);
 }
 
 
@@ -360,21 +483,30 @@ footer {
     padding: 20px 0px;
 }
 
+.footer-container a {
+    color: white;
+}
 
 
 
-
-
-
-/* =================Mobilbe-First Layout End================= */
+/* =================Tablet Layout End================= */
 
 
 
 /* =================Desktop Layout Start================= */
 
 @media screen and (min-width: 1200px) {
-    .container, .intro-container {
-        width: 1080px;
+    
+    /* -----------------Container Setting----------------- */
+
+    .container {
+        max-width: 1080px;
+        margin: 0px auto;
+    }
+
+    .intro-container, .footer-container {
+        max-width: 1080px;
+        margin: 0px auto;
     }
     
 
@@ -395,7 +527,7 @@ footer {
 
     .product-anchor, .contact-anchor {
         position: relative;
-        top: -59px;
+        top: -50px;
         display: block;
         height: 0px;
         overflow: hidden;
@@ -407,15 +539,17 @@ footer {
 
     .logo {
         width: 260px;
-        margin: 0px auto;
+        margin: 10px 50px 0px;
         padding: 18px 0px;
         font-size: 1.5rem;
+        text-align: left;
     }
 
     nav {
+        max-height: 5.2rem;
         margin: 0px auto;
         position: absolute;
-        top: -32px;
+        top: 0px;
         left: 62%;
         overflow: hidden;
     }
@@ -427,7 +561,7 @@ footer {
     .navlist {
         display: inline-flex;
         font-size: 1rem;
-        padding: 21px 0px;
+        padding: 15px 0px;
     }
 
     .nav-items {
@@ -436,6 +570,10 @@ footer {
         transform: translateY(11px);
         border-bottom: none;
         border-right: 1px solid #3C1518;
+    }
+
+    .nav-home {
+        margin-left: 40px;
     }
 
     .border-none {
@@ -447,7 +585,7 @@ footer {
     /* -----------------Main Banner----------------- */    
 
     .main-banner-section {
-        padding-top: 60px;
+        padding-top: 83px;
     }
 
     .main-banner-container {
@@ -455,21 +593,6 @@ footer {
         overflow: hidden;
     }
     
-    /* previous and next button */
-    .prev, .next {
-        top: 42%;
-    }
-    
-    /* main banner wording and button */
-    .main-wording {
-        bottom: 40%;
-    }
-
-    /* dots */
-    .dot-container {
-        display: none;
-    }
-
     /* scroll down icon */
     .scroll-down {
         position: absolute;
@@ -534,7 +657,11 @@ footer {
         padding: 10px;
     }
 
+    /* -----------------Contact Section----------------- */
 
+    .contact-form {
+        padding: 0px 10px;
+    }
 
 
 

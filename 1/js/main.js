@@ -6,9 +6,15 @@ $(document).ready(function(){
         $(".navlist").slideToggle();
     });
 
-    $(".navlist").click(function(){
-        $(".navlist").slideToggle();
-    });
+    if ($(window).width() < 761) {
+        $(".navlist").click(function(){
+            $(".navlist").slideToggle();
+        });
+    }
+    else{
+
+    };
+
 
 });
 
